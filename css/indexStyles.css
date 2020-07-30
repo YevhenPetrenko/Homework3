@@ -1,0 +1,63 @@
+:root{
+    --headerFont-size: 36px;
+    --font-family: 'Open Sans', sans-serif;
+    --main-backgroud: gray;
+}
+
+
+.navigationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1a1a;
+    width: 100%;
+    height: 100vh;
+}
+
+.navigationItem{
+    width: 100%;
+    height: 25%;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1a1a;
+    color: antiquewhite;
+    background-size: cover;
+    text-decoration: none;
+}
+.navigationItem > h2{
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--headerFont-size);
+}
+.navigationItem:hover {
+    color: #1c1a1a;
+    animation: animatedBackground 1s linear 1 alternate;
+}
+
+.subNavHover:hover{
+    background-image: url('../images/mockImageNav.jpg');
+}
+
+.subFormHover:hover{
+    background-image: url('../images/mockImageForm.jpeg');
+}
+
+.subCardHover:hover{
+    background-image: url('../images/mockImageCard.jpeg');
+}
+
+.subCssBoxHover:hover{
+    background-image: url('../images/mockCssBoxImage.jpeg');
+}
+
+@keyframes animatedBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
