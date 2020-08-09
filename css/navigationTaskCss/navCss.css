@@ -1,0 +1,178 @@
+:root {
+    --navigationContainer-minHeight: 150px;
+    --navigation-background-color: #1c1a1a;
+}
+
+
+.navigationContainer {
+    min-height: var(--navigationContainer-minHeight);
+    background-color: var(--navigation-background-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.navigationItem {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuNavigationItem {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 20%;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menuNavigationItem:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.signatureItem {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signatureItem > h2 {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 32px;
+    color: aliceblue;
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactButton {
+    display: flex;
+    border: 1px solid white;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.contactButton:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.mainImage {
+    max-width: 100vw;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1440px) {
+    .menuNavigationItem {
+        font-size: 28px;
+    }
+
+    .signatureItem > h2 {
+        font-size: 38px;
+    }
+
+    .contactButton {
+        font-size: 20px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menuNavigationItem {
+        font-size: 16px;
+    }
+
+    .signatureItem > h2 {
+        font-size: 28px;
+    }
+
+    .contactButton {
+        font-size: 14px;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .menuNavigationItem {
+        font-size: 12px;
+    }
+
+    .signatureItem > h2 {
+        font-size: 20px;
+    }
+
+    .contactButton {
+        font-size: 10px;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigationContainer {
+        flex-direction: column;
+    }
+
+    .signatureItem {
+        width: 100%;
+        justify-content: flex-start;
+        margin: 10px 20px;
+    }
+
+    .navigationItem {
+        width: 100%;
+        height: 40px;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        box-sizing: border-box;
+        margin: 10px 5px;
+    }
+
+    .menuNavigationItem {
+        height: 80%;
+        justify-content: flex-start;
+        padding-left: 5px;
+        font-size: 14px;
+    }
+
+    .contactItem {
+        justify-content: flex-start;
+        margin: 10px 5px;
+    }
+
+    .contactButton {
+        height: 40px;
+        width: 90px;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
