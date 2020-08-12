@@ -33,24 +33,28 @@
     font-size: var(--headerFont-size);
 }
 .navigationItem:hover {
-    color: #1c1a1a;
+    color: lawngreen;
     animation: animatedBackground 1s linear 1 alternate;
 }
 
 .subNavHover:hover{
-    background-image: url('../images/mockImageNav.jpg');
+    background-image: url('../images/navigationTaskImage.png');
+    background-size: cover;
 }
 
 .subFormHover:hover{
-    background-image: url('../images/mockImageForm.jpeg');
+    background-image: url('../images/formTaskImage.png');
+    background-size: cover;
 }
 
 .subCardHover:hover{
-    background-image: url('../images/mockImageCard.jpeg');
+    background-image: url('../images/cardTaskImage.png');
+    background-size: cover;
 }
 
 .subCssBoxHover:hover{
-    background-image: url('../images/mockCssBoxImage.jpeg');
+    background-image: url('../images/boxTaskImage.png');
+    background-size: cover;
 }
 
 @keyframes animatedBackground {
