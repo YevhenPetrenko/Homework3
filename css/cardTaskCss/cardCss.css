@@ -1,0 +1,147 @@
+:root {
+    --sign-row-font-size: 32px;
+    --value-row-font-size: 48px;
+}
+
+.mainCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardItem {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4%;
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.signatureRow {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: white;
+    font-size: var(--sign-row-font-size);
+    font-weight: 600;
+    height: 15%;
+}
+
+.signatureRow > h2 {
+    margin: auto 0;
+    width: 80%;
+}
+
+.signatureRow > img {
+    width: 20%;
+    object-fit: contain;
+    filter: invert(1);
+}
+
+.valueRow {
+    margin: 5% 15% 15%;
+    color: white;
+    font-size: var(--value-row-font-size);
+    font-weight: 800;
+}
+
+.resultRow {
+    margin-left: 15%;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.round {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 50%;
+}
+
+.roundLeft {
+    margin-left: 20%;
+}
+
+.roundBottom {
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.firstCard {
+    background: linear-gradient(to right, #fffca2, coral);
+}
+
+.secondCard {
+    background: linear-gradient(to right, #a9b6ff, dodgerblue);
+}
+
+.thirdCard {
+    background: linear-gradient(to right, #aeffb4, greenyellow);
+}
+
+@media screen and (min-width: 2560px) {
+    .cardItem {
+        height: 400px;
+    }
+
+    .signatureRow {
+        font-size: 50px;
+        height: 20%;
+    }
+
+    .valueRow {
+        font-size: 56px;
+        margin-bottom: 10%;
+    }
+
+    .resultRow {
+        font-size: 36px;
+    }
+
+    .round{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cardItem{
+        height: 250px;
+    }
+    .signatureRow {
+        font-size: 26px;
+        height: 20%;
+    }
+
+    .valueRow {
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+
+    .resultRow {
+        font-size: 20px;
+    }
+
+    .round{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .mainCardContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardItem{
+        width: 70%;
+    }
+}
