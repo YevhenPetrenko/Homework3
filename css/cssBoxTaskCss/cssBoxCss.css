@@ -1,17 +1,15 @@
 .headerContentContainer {
     background-color: #1c1a1a;
-    height: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.headerImage {
-    position: absolute;
-    opacity: 0.4;
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
+.header {
+    background-image: url("../../images/boxImages/headerImage.png");
+    background-size: cover;
 }
 
 .headerItem {
@@ -25,13 +23,16 @@
     font-weight: 800;
     font-family: sans-serif;
     text-align: center;
+    margin-top: 2%;
 }
 
 .contentHeader {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     font-family: sans-serif;
     text-align: center;
+    line-height: 1.5em;
+    width: 60%;
 }
 
 .buttonContainer {
@@ -53,7 +54,6 @@
     color: whitesmoke;
     box-sizing: border-box;
     padding-top: 19px;
-    z-index: 2;
 }
 
 #readMore:hover {
@@ -63,11 +63,10 @@
 
 .contentContainer {
     background: whitesmoke;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2% 25%;
+    padding: 2% 20%;
     color: #1c1a1a;
     font-size: 32px;
     font-weight: 600;
@@ -79,4 +78,192 @@
     font-size: 20px;
     font-weight: 400;
     columns: 2;
+    line-height: 1.5em;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardItem {
+    width: 18%;
+    height: 90%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.cardItem > img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.cardItem > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10% 0;
+}
+
+.cardItem > p {
+    font-size: 16px;
+    line-height: 1.3em;
+    margin: 0 15%;
+    text-align: center;
+}
+
+.secondContentDiv {
+    columns: 1;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 100%;
+}
+
+.footerContentContainer {
+    justify-content: normal;
+}
+
+.footerItem {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: dodgerblue;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.footerItem > h1 {
+    margin-top: 10%;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.footerItem > div {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 18px;
+    line-height: 1.3em;
+    text-align: center;
+    height: 70%;
+}
+
+.mailItem {
+    margin: 5% 0 !important;
+}
+
+.noBackFooterItem {
+    background-color: unset;
+}
+
+.signatureItem{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    height: 20%;
+    color: whitesmoke;
+}
+
+.signatureSimpleItem{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#referMedia{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardItem{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .mainHeaderItem{
+        font-size: 24px;
+    }
+    .contentHeader{
+        font-size: 18px;
+    }
+    .buttonContainer{
+        font-size: 18px;
+    }
+    .cardItem > h2{
+        font-size: 18px;
+    }
+    .cardItem > p {
+        font-size: 12px;
+    }
+    .footerItem > h1{
+        font-size: 24px;
+    }
+    .footerItem > div{
+        font-size: 14px;
+    }
+    .mailItem{
+        font-size: 14px;
+    }
+    .signatureSimpleItem{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .footerContainer{
+        flex-direction: column;
+    }
+    .footerItem{
+        width: 100%;
+    }
+    .footerItem > h1{
+        font-size: 20px;
+    }
+    .footerItem > div{
+        font-size: 12px;
+    }
+    .mailItem{
+        font-size: 12px;
+    }
+    .signatureSimpleItem{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .mainHeaderItem{
+        font-size: 18px;
+    }
+    .contentHeader{
+        font-size: 14px;
+    }
+    .buttonContainer{
+        font-size: 14px;
+    }
+    .cardItem > h2{
+        font-size: 10px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .cardItem > p {
+        font-size: 10px;
+    }
 }
