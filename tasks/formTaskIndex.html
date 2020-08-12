@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/formTaskCss/formCss.css" rel="stylesheet">
 </head>
 <body>
-
+    <div class="mainContainer">
+        <form class="mainForm">
+            <h2>Contact form</h2>
+            <div class="informationItem">Please fill in your information and we`ll be sending your order</div>
+            <div class="fieldsContainer">
+                <div class="fieldsRow">
+                    <label for="nameField">Your name</label><input id="nameField" type="text" placeholder="first name">
+                    <label for="lastName"></label><input id = "lastName" placeholder="last name">
+                </div>
+                <div class="fieldsRow">
+                    <label for="emailField">Your email</label><input id="emailField" type="email" placeholder="your_mail@mail.com">
+                </div>
+                <div class="fieldsRow">
+                    <label for="phoneExt1">Phone *</label><input id="phoneExt1" type="number" placeholder="000">
+                    <label for="phoneExt2"></label><input id="phoneExt2" type="number" placeholder="000">
+                    <label for="phoneExt3"></label><input id="phoneExt3" type="number" placeholder="0000">
+                </div>
+                <div class="fieldsRow">
+                    <label for="fieldSubj">Message subject *</label><select id="fieldSubj"></select>
+                </div>
+                <div class="fieldsRow messageRow">
+                    <label id="messageLabel" for="fieldMessage">Message *</label><input id="fieldMessage" type="text">
+                </div>
+                <div class="fieldsRow splitter">
+                </div>
+                <div class="fieldsRow">
+                    <label for="submitButton"></label>
+                    <input id="submitButton" type="submit" value="SUBMIT BUTTON">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

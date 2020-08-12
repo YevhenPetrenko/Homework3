@@ -1,0 +1,175 @@
+:root {
+    --full-field-width: 80%;
+    --name-item-field-width: 38%;
+    --numberExt-field-width: 24%;
+    --common-right-margin: 4%;
+}
+
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../images/formTaskImages/Islands_65.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainForm {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 60vw;
+    height: 80vh;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px black;
+    padding: 40px 20px;
+}
+
+.mainForm > h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+.informationItem {
+    font-family: sans-serif;
+    color: white;
+    margin: 20px 0;
+}
+
+.fieldsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldsRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    height: 30px;
+    justify-content: flex-start;
+}
+
+.fieldsRow > label:first-child {
+    width: 20%;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: auto 0;
+}
+
+#nameField {
+    width: var(--name-item-field-width);
+    margin-right: var(--common-right-margin);
+    box-sizing: border-box;
+}
+
+#lastName {
+    width: var(--name-item-field-width);
+    box-sizing: border-box;
+}
+
+#emailField {
+    width: var(--full-field-width);
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#phoneExt1 {
+    width: var(--numberExt-field-width);
+    margin-right: var(--common-right-margin);
+    box-sizing: border-box;
+}
+
+#phoneExt2 {
+    width: var(--numberExt-field-width);
+    margin-right: var(--common-right-margin);
+    box-sizing: border-box;
+}
+
+#phoneExt3 {
+    width: var(--numberExt-field-width);
+    box-sizing: border-box;
+}
+
+#fieldSubj {
+    width: var(--full-field-width);
+    box-sizing: border-box;
+}
+
+#fieldMessage {
+    width: var(--full-field-width);
+    box-sizing: border-box;
+}
+
+#messageLabel {
+    margin: 0 0;
+}
+
+.messageRow {
+    height: 80px;
+}
+
+.splitter {
+    height: 0;
+    border: solid 2px white;
+}
+
+#submitButton {
+    width: var(--full-field-width);
+    background: none;
+    border: solid 2px white;
+    color: white;
+}
+
+@media only screen and (min-width: 2560px) {
+    .fieldsRow {
+        height: 60px;
+    }
+
+    .splitter {
+        height: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mainForm {
+        height: 90%;
+        width: 90%;
+        padding: 20px 20px;
+    }
+
+    .fieldsRow {
+        flex-direction: column;
+        height: 20%;
+    }
+
+    .fieldsRow > label {
+        width: 100% !important;
+    }
+
+    .fieldsRow > input {
+        width: 100% !important;
+    }
+
+    .fieldsRow > select {
+        width: 100% !important;
+    }
+
+    .splitter {
+        height: 0;
+    }
+
+    .mainForm > h2 {
+        font-size: 24px;
+    }
+}
